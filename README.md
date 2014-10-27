@@ -19,7 +19,7 @@ A collection of my more common scripts
 12. Number.parseFloat()
 13. JSON //this is for the Parse and Stringify functions.
 
-## The following are from a collection of code that I have found and modified, or just wrote outright. ##
+## The following are from a collection of code that I have found, modified, or just wrote outright. ##
  
 1. clone(obj) Returns a clone of the object.
 2. newGuid(postback, url, count) Get the GUIDs from the server. Assumes you have a restful Guid generator API.
