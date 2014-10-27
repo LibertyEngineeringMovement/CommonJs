@@ -25,3 +25,4 @@ A collection of my more common scripts
 2. newGuid(postback, url, count) Get the GUIDs from the server. Assumes you have a restful Guid generator API.
 3. Digest($scope) Angular Specific Digest() Command. The difference between this and the Apply, is that I don't needlessly hit your console.log with information.
 4. XPath by Cybozu Labs, Inc. (MIT Lic.)
+5. JSONPath 0.8.0 - XPath for JSON Stefan Goessner (goessner.net) (MIT Lic.).
