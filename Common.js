@@ -509,7 +509,7 @@ if (!window.JSON) {
 
 // Adds the .NET String.Format() function to JavaScript
 //This is an alternative to http://ajaxcontroltoolkit.codeplex.com/SourceControl/latest#Client/MicrosoftAjax/Extensions/String.js
-if (!String.prototype.format) {
+if (!String.prototype.format) { //"some{0}value".format("text") => "sometextvalue"
     String.prototype.format = function () {
         var args = arguments;
         return this.replace(/{(\d+)}/g, function (match, number) {
@@ -520,6 +520,17 @@ if (!String.prototype.format) {
         });
     };
 }
+    String.format = function (stringVal) {  //String.format("some{0}value","text") => "sometextvalue"
+        var args = arguments;
+        return stringVal.replace(/{(\d+)}/g, function (match, number) {
+            var no = Number(number) + 1;
+            return typeof args[no] != 'undefined'
+            ? args[no]
+            : match
+            ;
+        });
+    };
+
 
 /*Angular Specific Digest() Command*/
 function Digest($scope) {
