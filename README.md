@@ -21,8 +21,9 @@ A collection of my more common scripts
 
 ## The following are from a collection of code that I have found, modified, or just wrote outright. ##
  
-1. clone(obj) Returns a clone of the object.
-2. newGuid(postback, url, count) Get the GUIDs from the server. Assumes you have a restful Guid generator API.
-3. Digest($scope) Angular Specific Digest() Command. The difference between this and the Apply, is that I don't needlessly hit your console.log with information.
-4. XPath by Cybozu Labs, Inc. (MIT Lic.)
-5. JSONPath 0.8.0 - XPath for JSON Stefan Goessner (goessner.net) (MIT Lic.).
+1. String.format(), you can also use "string".format(). Follows the .NET String.Format()
+2. clone(obj) Returns a clone of the object.
+3. newGuid(postback, url, count) Get the GUIDs from the server. Assumes you have a restful Guid generator API.
+4. Digest($scope) Angular Specific Digest() Command. The difference between this and the Apply, is that I don't needlessly hit your console.log with information.
+5. XPath by Cybozu Labs, Inc. (MIT Lic.)
+6. JSONPath 0.8.0 - XPath for JSON Stefan Goessner (goessner.net) (MIT Lic.).
