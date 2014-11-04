@@ -363,6 +363,17 @@ if (!String.prototype.startsWith) {
     }());
 }
 
+//String.Trim()
+if (!String.prototype.trim) {
+    (function () {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function () {
+            return this.replace(rtrim, "");
+        }
+    })();
+}
+
 /*OBJECTS OBJECT*/
 /*Object.is()*/
 if (!Object.is) {
