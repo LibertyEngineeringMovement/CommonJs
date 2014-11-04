@@ -14,10 +14,11 @@ A collection of my more common scripts
 7. String.contains()
 8. String.endsWith()
 9. String.startsWith()
-10. Object.is()
-11. Object.setPrototypeOf()
-12. Number.parseFloat()
-13. JSON //this is for the Parse and Stringify functions.
+10. String.trim()
+11. Object.is()
+12. Object.setPrototypeOf()
+13. Number.parseFloat()
+14. JSON //this is for the Parse and Stringify functions.
 
 ## The following are from a collection of code that I have found, modified, or just wrote outright. ##
  
