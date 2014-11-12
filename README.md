@@ -7,7 +7,7 @@ A collection of my more common scripts
 
 1. Array.filter()
 2. Array.find()
-3. Array.find()
+3. Array.findOrNull()
 4. Array.findIndex()
 5. String.fromCodePoint()
 6. String.codePointAt()
