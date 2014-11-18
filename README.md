@@ -28,3 +28,7 @@ A collection of my more common scripts
 4. Digest($scope) Angular Specific Digest() Command. The difference between this and the Apply, is that I don't needlessly hit your console.log with information.
 5. XPath by Cybozu Labs, Inc. (MIT Lic.)
 6. JSONPath 0.8.0 - XPath for JSON Stefan Goessner (goessner.net) (MIT Lic.).
+ 
+## Constants, or functions that act like constants ##
+1. function TimeRegEx(){ return "(([0-1]\d)|(2[0-3])):([0-5]\d)(:([0-5]\d))?"};
+
