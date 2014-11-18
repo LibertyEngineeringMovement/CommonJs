@@ -556,38 +556,36 @@ function Digest($scope) {
     //console.log('$scope snapshot:', $scope);
 }
 
-The MIT License
-
-Copyright (c) 2007 Cybozu Labs, Inc.
-
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-/*  JavaScript-XPath 0.1.12
+/*
+ *  The MIT License
+ *  
+ *  Copyright (c) 2007 Cybozu Labs, Inc.
+ *  
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy
+ *  of this software and associated documentation files (the "Software"), to deal
+ *  in the Software without restriction, including without limitation the rights
+ *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *  copies of the Software, and to permit persons to whom the Software is
+ *  furnished to do so, subject to the following conditions:
+ *  
+ *  The above copyright notice and this permission notice shall be included in
+ *  all copies or substantial portions of the Software.
+ *  
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ *  THE SOFTWARE.
+ *  
+ *  JavaScript-XPath 0.1.12
  *  (c) 2007 Cybozu Labs, Inc.
  *
  *  JavaScript-XPath is freely distributable under the terms of an MIT-style license.
  *  For details, see the JavaScript-XPath web site: http://coderepos.org/share/wiki/JavaScript-XPath
  *
 /*--------------------------------------------------------------------------*/
-
-
 
 (function () {
 
@@ -3503,3 +3501,8 @@ function jsonPath(obj, expr, arg) {
       return P.result.length ? P.result : false;
    }
 } 
+
+/* FAVORITE and KEY CONSTANTS */
+//Used for pattern on input controls. <input type="text" ng-pattern="TimeRegEx()" ...
+//When using with angular, you may want to register into your controller, and address from controller.
+function TimeRegEx(){ return "(([0-1]\d)|(2[0-3])):([0-5]\d)(:([0-5]\d))?"};
