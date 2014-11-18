@@ -31,4 +31,5 @@ A collection of my more common scripts
  
 ## Constants, or functions that act like constants ##
 1. function TimeRegEx(){ return "(([0-1]\d)|(2[0-3])):([0-5]\d)(:([0-5]\d))?"};
+ 1. This is done because time gets marshalled back to the server as a date object, but a .NET Timespan object cannot parse that correctly without going through a custom converter. But if you marshal as text, then you can timespan can parse into a proper timespan object.
 
