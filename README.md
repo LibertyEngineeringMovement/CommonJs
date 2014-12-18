@@ -33,6 +33,8 @@ A collection of my more common scripts
 1. function TimeRegEx(){ return "(([0-1]\d)|(2[0-3])):([0-5]\d)(:([0-5]\d))?"};
  1. This is done because time gets marshalled back to the server as a date object, but a .NET Timespan object cannot parse that correctly without going through a custom converter. But if you marshal as text, then you can timespan can parse into a proper timespan object.
 
-## 12/18/2014 Update Notice ## 
+## Update Notices
+
+### 12/18/2014 
 
 Since MS has moved everything .NET to Open Source, and much of it is now MIT lic, I will be changing my String.Format to theirs, but with a minor changes. Though I plan on preserving their Lic.
