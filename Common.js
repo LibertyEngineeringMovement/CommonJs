@@ -246,6 +246,22 @@ if (!String.prototype.contains) {
     };
 }
 
+/*String.left()*/
+if (!String.prototype.left) {
+    String.prototype.left = function (len) {
+        return String(this).substring(0,len);
+    };
+}
+
+/*String.right()*/
+if (!String.prototype.right) {
+    String.prototype.right = function (len) {
+        var tmp = String(this);
+        var strt = tmp.length - len;
+        return tmp.substring(strt);
+    };
+}
+
 /*String.endsWith()*/
 if (!String.prototype.endsWith) {
     (function () {
