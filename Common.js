@@ -558,6 +558,26 @@ if (!String.prototype.format) { //"some{0}value".format("text") => "sometextvalu
         });
     };
 
+//"".isWhiteSpaceOrNull() === true  "dfdfer".isWhiteSpaceOrNull() === false
+if (!String.prototype.isWhiteSpaceOrNull) {
+    String.prototype.isWhiteSpaceOrNull = function () {
+        if (this === undefined) return true;
+        if (this === null) return true;
+        if (this.trim().length === 0) return true;
+        return false;
+    }
+}
+
+//((Number)null).isNullOrWhiteSpace() === true;
+if (!Number.prototype.isWhiteSpaceOrNull) {
+    Number.prototype.isWhiteSpaceOrNull = function () {
+        if (this === undefined) return true;
+        if (this === null) return true;
+        if (this.toString().length === 0) return true;
+        return false;
+    }
+}
+
 
 /*Angular Specific Digest() Command*/
 function Digest($scope) {
